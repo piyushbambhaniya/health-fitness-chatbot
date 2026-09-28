@@ -1,0 +1,320 @@
+================================================================
+        HEALTH & FITNESS RULE-BASED CHATBOT
+        Example Interactions Document
+================================================================
+
+Subject   : Artificial Intelligence (ALA)
+Topic     : Health & Fitness Chatbot
+Type      : Rule-Based (if-else conditions)
+Language  : Python 3
+
+----------------------------------------------------------------
+                        INTRODUCTION
+----------------------------------------------------------------
+
+This document presents example conversations between a user and
+the Health & Fitness Chatbot. The chatbot uses rule-based
+if-else conditions to detect keywords in user input and respond
+with relevant health and fitness information.
+
+The chatbot covers the following topics:
+  1.  Greetings
+  2.  Workout / Exercise
+  3.  Weight Loss
+  4.  Weight / Muscle Gain
+  5.  Diet & Nutrition
+  6.  Protein & Supplements
+  7.  Hydration / Water Intake
+  8.  Sleep & Recovery
+  9.  Cardio
+  10. Stretching / Flexibility
+  11. Mental Health & Fitness
+  12. BMI (Body Mass Index)
+  13. Farewell
+
+----------------------------------------------------------------
+                    HOW THE CHATBOT WORKS
+----------------------------------------------------------------
+
+The chatbot reads the user's input, converts it to lowercase,
+and checks it against a series of if-elif-else conditions. Each
+condition looks for specific keywords or phrases. When a match
+is found, the corresponding response is returned. If no keyword
+matches, a fallback message is displayed.
+
+Key design decisions:
+  - Input is normalised to lowercase for case-insensitive matching.
+  - The 'any()' function checks for multiple keyword variants.
+  - Nested conditions handle more specific sub-topics.
+  - A while loop keeps the chat running until the user exits.
+
+================================================================
+                    EXAMPLE INTERACTIONS
+================================================================
+
+----------------------------------------------------------------
+INTERACTION 1 — Greeting & Help
+----------------------------------------------------------------
+
+You: hello
+
+Chatbot: Hello! Welcome to the Health & Fitness Chatbot. 💪
+         You can ask me about workouts, diet, weight loss, sleep,
+         hydration, and more!
+         Type 'help' to see what I can answer.
+
+---
+
+You: help
+
+Chatbot: Here are the topics I can help you with:
+           1. Workout / Exercise
+           2. Weight Loss / Gain
+           3. Diet / Nutrition
+           4. Protein & Supplements
+           5. Hydration / Water Intake
+           6. Sleep & Recovery
+           7. Cardio
+           8. Stretching / Flexibility
+           9. Mental Health & Fitness
+          10. BMI
+         Just type a question or keyword!
+
+----------------------------------------------------------------
+INTERACTION 2 — Workout for Beginners
+----------------------------------------------------------------
+
+You: I am new to working out, how do I start?
+
+Chatbot: For beginners, start with 3 days a week of full-body workouts.
+         Focus on compound movements: squats, push-ups, lunges, and rows.
+         Rest at least one day between sessions to allow muscle recovery.
+
+---
+
+You: how many days per week should I exercise?
+
+Chatbot: Most people benefit from working out 3–5 days per week.
+         Beginners: 3 days | Intermediate: 4 days | Advanced: 5–6 days.
+         Always include at least 1–2 rest days for recovery.
+
+---
+
+You: what are good home workout exercises?
+
+Chatbot: Great home workout exercises include:
+           • Push-ups (chest & triceps)
+           • Squats and lunges (legs)
+           • Plank (core)
+           • Mountain climbers (cardio + core)
+           • Glute bridges (glutes & hamstrings)
+         No equipment needed!
+
+----------------------------------------------------------------
+INTERACTION 3 — Weight Loss
+----------------------------------------------------------------
+
+You: how do I lose weight?
+
+Chatbot: Key principles of weight loss:
+           1. Caloric deficit — burn more calories than you consume.
+           2. Eat whole foods: vegetables, lean protein, whole grains.
+           3. Do both cardio AND strength training.
+           4. Sleep 7–9 hours; poor sleep raises hunger hormones.
+           5. Stay hydrated — sometimes thirst feels like hunger.
+         Aim to lose 0.5–1 kg per week for sustainable results.
+
+----------------------------------------------------------------
+INTERACTION 4 — Building Muscle
+----------------------------------------------------------------
+
+You: I want to build muscle and gain weight
+
+Chatbot: To gain weight / build muscle:
+           1. Eat in a caloric surplus (300–500 extra calories/day).
+           2. Prioritise protein: 1.6–2.2 g per kg of body weight.
+           3. Lift heavy with progressive overload.
+           4. Compound lifts: bench press, deadlift, squat, overhead press.
+           5. Rest adequately — muscles grow during recovery, not in the gym.
+
+----------------------------------------------------------------
+INTERACTION 5 — Diet & Nutrition
+----------------------------------------------------------------
+
+You: what are the best foods to eat?
+
+Chatbot: Focus on nutrient-dense foods:
+           ✅ Lean proteins: chicken, fish, eggs, legumes
+           ✅ Complex carbs: oats, brown rice, sweet potato
+           ✅ Healthy fats: avocado, nuts, olive oil
+           ✅ Vegetables & fruits (fibre + micronutrients)
+           ❌ Limit: processed foods, sugary drinks, trans fats
+
+---
+
+You: how many calories should I eat daily?
+
+Chatbot: Daily calorie needs vary by goal:
+           • Weight loss  : 1,500–1,800 kcal (average adult)
+           • Maintenance  : 2,000–2,200 kcal
+           • Weight gain  : 2,500–3,000 kcal
+         Use a TDEE calculator for a personalised number.
+
+----------------------------------------------------------------
+INTERACTION 6 — Protein & Supplements
+----------------------------------------------------------------
+
+You: how much protein do I need daily?
+
+Chatbot: Recommended daily protein intake:
+           • Sedentary adults  : 0.8 g / kg body weight
+           • Active individuals: 1.2–1.6 g / kg body weight
+           • Athletes / lifters: 1.6–2.2 g / kg body weight
+         Good sources: eggs, chicken, fish, tofu, Greek yogurt, lentils.
+
+---
+
+You: tell me about creatine
+
+Chatbot: Creatine monohydrate is one of the most researched supplements.
+           • Take 3–5 g per day consistently.
+           • Helps increase strength and power output.
+           • Safe for most healthy adults.
+           • Stay well-hydrated while using it.
+
+---
+
+You: what is whey protein?
+
+Chatbot: Whey protein is a fast-digesting protein ideal post-workout.
+           • 20–30 g post-workout helps muscle recovery.
+           • Not essential if you meet protein needs through food.
+           • Alternatives: pea protein, soy protein (for vegans).
+
+----------------------------------------------------------------
+INTERACTION 7 — Hydration
+----------------------------------------------------------------
+
+You: how much water should I drink?
+
+Chatbot: Hydration guidelines:
+           • General rule : ~8 glasses (2 litres) per day.
+           • Active people: 3–4 litres, more in hot climates.
+           • Drink water before, during, and after workouts.
+           • Signs of dehydration: dark urine, fatigue, headache.
+           • Tip: carry a water bottle as a constant reminder!
+
+----------------------------------------------------------------
+INTERACTION 8 — Sleep & Recovery
+----------------------------------------------------------------
+
+You: how many hours of sleep do I need?
+
+Chatbot: Adults need 7–9 hours of sleep per night.
+         Athletes or heavy trainers may benefit from up to 10 hours.
+         Sleep is when your muscles repair and grow — never skip rest!
+
+---
+
+You: what are good recovery tips?
+
+Chatbot: Recovery tips:
+           • Sleep 7–9 hours every night.
+           • Take 1–2 rest days per week from intense training.
+           • Use active recovery: light walking, yoga, swimming.
+           • Eat protein after workouts to aid muscle repair.
+           • Stretch and foam-roll to reduce soreness.
+
+----------------------------------------------------------------
+INTERACTION 9 — Cardio
+----------------------------------------------------------------
+
+You: what is HIIT?
+
+Chatbot: HIIT (High-Intensity Interval Training):
+           • Alternates short bursts of max effort with brief rest.
+           • Example: 30 sec sprint → 30 sec walk × 10 rounds.
+           • Burns more calories in less time than steady-state cardio.
+           • Do 2–3 sessions per week; avoid consecutive days.
+
+---
+
+You: how long should I do cardio?
+
+Chatbot: Cardio duration recommendations:
+           • Minimum: 150 min moderate OR 75 min vigorous per week.
+           • For weight loss: aim for 200–300 min moderate per week.
+           • Split into 30–60 min sessions for manageability.
+
+----------------------------------------------------------------
+INTERACTION 10 — Stretching & Flexibility
+----------------------------------------------------------------
+
+You: should I stretch before or after workout?
+
+Chatbot: Stretching & flexibility tips:
+           • Warm up with 5–10 min of light cardio before workouts.
+           • Cool down with static stretches (hold 20–30 sec each).
+           • Yoga or mobility work 2–3× per week improves range of motion.
+           • Key muscles to stretch: hamstrings, hip flexors, chest, shoulders.
+           • Never bounce during static stretches — risk of injury.
+
+----------------------------------------------------------------
+INTERACTION 11 — Mental Health
+----------------------------------------------------------------
+
+You: I feel stressed and have no motivation to exercise
+
+Chatbot: Exercise and mental health:
+           • Just 30 min of moderate exercise releases endorphins.
+           • Regular activity reduces symptoms of anxiety and depression.
+           • Set small, achievable goals to build confidence and motivation.
+           • Try mindfulness or meditation alongside your fitness routine.
+           • If struggling, speak to a healthcare professional — fitness
+             is one part of overall wellness.
+
+----------------------------------------------------------------
+INTERACTION 12 — BMI
+----------------------------------------------------------------
+
+You: what is a healthy BMI?
+
+Chatbot: BMI (Body Mass Index) categories:
+           • Underweight : BMI < 18.5
+           • Normal      : BMI 18.5 – 24.9
+           • Overweight  : BMI 25 – 29.9
+           • Obese       : BMI ≥ 30
+         Formula: BMI = weight(kg) ÷ height(m)²
+         Note: BMI doesn't account for muscle mass — use it as a guide only.
+
+----------------------------------------------------------------
+INTERACTION 13 — Unknown Input (Fallback)
+----------------------------------------------------------------
+
+You: what is the best video game for fitness?
+
+Chatbot: I'm not sure I understand that. 🤔
+         Try asking about: workout, diet, weight loss, protein, cardio,
+         sleep, hydration, stretching, mental health, or BMI.
+         Type 'help' for the full topic list.
+
+----------------------------------------------------------------
+INTERACTION 14 — Goodbye
+----------------------------------------------------------------
+
+You: thanks, bye!
+
+Chatbot: Thanks for chatting! Stay active, eat well, and rest enough. 🏃‍♂️
+         Remember: small daily improvements lead to big results. Goodbye! 👋
+
+================================================================
+                    FILES SUBMITTED
+================================================================
+
+  1. health_fitness_chatbot.py   — Python source code
+  2. Chatbot_Example_Interactions.txt / .docx / .pdf
+                                  — This interactions document
+
+================================================================
+                        END OF DOCUMENT
+================================================================
